@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h1>Heart Disease Prediction</h1>
+
+    <form method="POST">
+
+        Age:
+        <input type="number" name="age" required><br><br>
+
+        Sex:
+        <select name="sex">
+            <option value="0">Female</option>
+            <option value="1">Male</option>
+        </select><br><br>
+
+        Chest Pain Type:
+        <select name="cp">
+            <option value="0">Typical Angina</option>
+            <option value="1">Atypical Angina</option>
+            <option value="2">Non-anginal Pain</option>
+            <option value="3">Asymptomatic</option>
+        </select><br><br>
+
+        Resting BP:
+        <input type="number" name="trestbps" required><br><br>
+
+        Cholesterol:
+        <input type="number" name="chol" required><br><br>
+
+        Fasting Blood Sugar:
+        <select name="fbs">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        Rest ECG:
+        <select name="restecg">
+            <option value="0">Normal</option>
+            <option value="1">ST-T Abnormality</option>
+            <option value="2">LV Hypertrophy</option>
+        </select><br><br>
+
+        Max Heart Rate:
+        <input type="number" name="thalach" required><br><br>
+
+        Exercise Induced Angina:
+        <select name="exang">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select><br><br>
+
+        Oldpeak:
+        <input type="number" step="0.1" name="oldpeak" required><br><br>
+
+        Slope:
+        <select name="slope">
+            <option value="0">Upsloping</option>
+            <option value="1">Flat</option>
+            <option value="2">Downsloping</option>
+        </select><br><br>
+
+        CA:
+        <input type="number" name="ca" min="0" max="3" required><br><br>
+
+        Thal:
+        <select name="thal">
+            <option value="0">Normal</option>
+            <option value="1">Fixed Defect</option>
+            <option value="2">Reversible Defect</option>
+        </select><br><br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+</body>
+</html>
